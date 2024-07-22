@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Scrabble Game</title>
+  <link rel="stylesheet" href="/src/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="icon" href="data:,">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/cannon.js/0.6.2/cannon.min.js"></script>
+</head>
+<body>
+  <div>
+    <button id="logo-container">
+    <img id="hp-logo" src="/src/HP logo.png" alt="Hogwarts Logo">
+  </button>
+</div>
+  <div id="app">
+    <div id="points-table">
+      <h2>Letter Points</h2>
+      <table>
+        <tr>
+          <th>Letter</th>
+          <th>Points</th>
+          <th>Letter</th>
+          <th>Points</th>
+        </tr>
+      </thead>
+      <tbody id="points-table-body">
+      </tbody>
+    </table>
+    </div>
+    <div id="game-container">
+      <div id="player2-name-display" class="player-name" style="display:none;" onclick="changePlayerName('player2-name-display', 'player2-name')">Player 1</div>
+      <div id="player2-letters"></div> 
+      <div id="player1-name-display" class="player-name" style="display:none;" onclick="changePlayerName('player1-name-display', 'player1-name')">Player 2</div>
+      <div id="player1-letters"></div> 
+    </div>
+    <div id="controls">
+      <div id="round-display">Round: 1</div>
+      <div id="player1-timer" onclick="changePlayerName('player1-name', 'player1-name-display')">Player 1 Timer: 90</div>
+      <button id="player1-help">Help!</button>
+      <div id="player2-timer" onclick="changePlayerName('player2-name', 'player2-name-display')">Player 2 Timer: 90</div>
+      <button id="player2-help">Help!</button>
+      <button id="start-button">Start</button>
+      <button id="ok-button">OK</button>
+      <button id="pass-button">Pass</button>
+    </div>
+    <div id="score-table">
+      <h2>Scores</h2>
+      <table>
+        <tr>
+          <th>Player</th>
+          <th>Score</th>
+        </tr>
+        <tr>
+          <td id="player1-name" onclick="changePlayerName('player1-name', 'player1-name-display')">Player 1</td>
+          <td id="player1-score">0</td>
+        </tr>
+        <tr>
+          <td id="player2-name" onclick="changePlayerName('player2-name', 'player2-name-display')">Player 2</td>
+          <td id="player2-score">0</td>
+        </tr>
+      </table>
+    </div>
+    <div id="info-button-container">
+      <button id="info-button">
+        <i class="fas fa-info-circle"></i>
+      </button>
+      <div id="modal" class="modal">
+        <div class="modal-content">
+          <span class="close-button">&times;</span>
+          <pre id="rules-content"></pre>           
+      </div>
+    </div>
+  <audio id="harry-potter-sound" src="src/Harry Potter Sound.mp3"></audio>
+</div>
+  <script src="https://threejs.org/build/three.js"></script>
+  
+
+  <script type="module" src="/src/main.js"></script>
+</body>
+</html>

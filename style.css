@@ -1,0 +1,298 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: inherit;
+}
+a:hover {
+  color: #535bf2;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: flex-start; /*contenuto a sinistra */
+  align-items: flex-start; /* allineamento contenuto in alto */
+  height: 100vh;
+  background-color: #000; 
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+#app {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: 100%;
+}
+
+#points-table, #score-table {
+  margin: 20px;
+  text-align: center;
+  width: 100px;
+  position: relative;
+}
+
+#points-table table, #score-table table {
+  margin: 0 auto;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+#points-table th, #points-table td {
+  border: 1px solid #0c0c0c;
+  padding: 4px;
+  font-size: 12px;
+  color: #000000; /* Imposta il colore del testo a nero */
+}
+#score-table th, #score-table td {
+  border: 1px solid #0c0c0c;
+  padding: 4px;
+  font-size: 12px;
+}
+
+
+#points-table th, #score-table th {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+#game-container {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  margin-left: -150px; 
+  margin-right: -150px; 
+}
+
+.player-name {
+  position: absolute;
+  background-color: #800080;
+  color: #000000;
+  padding: 4px 8px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#player1-name-display {
+  bottom: 5px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+#player2-name-display {
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+#controls {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  top: 50%;
+  left: 80%;
+  transform: translate(-50%, -50%);
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+#round-display,
+#player1-timer,
+#player2-timer {
+  background-color: #ffffff;
+  color: #000000;
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 16px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+#start-button {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#start-button:hover {
+  background-color: #45a049;
+}
+
+#ok-button {
+  position: absolute;
+  bottom: 175px;
+  left: -45%;
+  transform: translateX(-50%);
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #2196F3;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#ok-button:hover {
+  background-color: #0b7dda;
+}
+
+#player1-letters, #player2-letters {
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  font-size: 20px;
+  font-weight: bold;
+  color: white;
+  margin-top: -40px; /* Posiziona sopra l'espositore */
+}
+
+#player1-letters {
+  top: 15%;
+}
+
+#player2-letters {
+  top: 95%;
+}
+
+button {
+  padding: 10px 15px;
+  margin: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+button:disabled {
+  cursor: not-allowed;
+  opacity: 0.5;
+}
+
+.letters-display {
+  padding: 10px;
+  border: 2px solid #000;
+  margin: 10px 0;
+  text-align: center;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+#pass-button {
+  background-color: #f44336;
+  color: white;
+  margin-top: 10px; /* Sposta il pulsante "Pass" verso il basso */
+}
+
+#pass-button:hover {
+  background-color: #e53935;
+}
+
+#logo-container {
+  width: 100%;
+  text-align: center;
+  padding: 0; /* Riduci il padding per ridurre l'area di interferenza */
+  position: absolute;
+  top: 10px; /* Posiziona il logo in alto */
+  left: 23%;
+  transform: translateX(-50%);
+  z-index: 1; /* Assicurati che il logo sia sotto i box dei player */
+  background: none; /* Rimuove lo sfondo del bottone */
+  border: none; /* Rimuove il bordo del bottone */
+  pointer-events: none; /* Rende il bottone non interattivo */
+}
+
+#hp-logo {
+  max-width: 150px; /* Puoi cambiare questa dimensione in base alle tue preferenze */
+}
+
+
+#info-button-container {
+  position: absolute;
+  bottom: 30px;
+  left: 20px;
+}
+
+#info-button {
+  background-color: #ffffff;
+  border: 2px solid #000000; /* Imposta il bordo nero */
+  cursor: pointer;
+  font-size: 24px;
+  border-radius: 5px; /* Opzionale: aggiunge bordi arrotondati */
+  width: 40px; /* Imposta la larghezza fissa */
+  height: 40px; /* Imposta l'altezza fissa */
+  display: flex; /* Centra l'icona verticalmente */
+  justify-content: center; /* Centra l'icona orizzontalmente */
+  align-items: center; /* Centra l'icona verticalmente */
+}
+
+#info-button i {
+  color: #000000;
+}
+
+
+/* per il pop-up delle rules*/
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1000; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+}
+
+
+.modal-content {
+  background-color: #fefefe;
+  color: #000; /* Text color */
+  margin: 10% auto; /* 10% from the top and centered */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 60%; /* Adjust the width as needed */
+  max-height: 80%; /* Adjust the max height as needed */
+  overflow-y: auto; /* Enable vertical scroll if needed */
+}
+
+
+.close-button {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close-button:hover,
+.close-button:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+#rules-content {
+  white-space: pre-wrap; /* Preserve whitespace */
+}

@@ -1,0 +1,64 @@
+Wizard Words Game Rules
+
+Objective.
+The objective of the game is to get the highest score by forming words on the table using the letters available. 
+Each word must respect the English language and can be derived from the world of Harry Potter.
+
+Setup.
+Number of Players: 2
+Materials:
+- A game board consisting of a grid with special squares.
+- A set of letters with point values.
+- A display stand for each player to hold the letters.
+- A timer to control each player's playing time.
+- A pass button to end the round.
+- An ok button to end the round earlier.
+
+Start of the Game.
+- A player presses the Start button and chooses the house of Hogwarts they belong to.
+- Each player will have 10 letters at the beginning of each round.
+- The first player forms a word on the board using his or her letters. The word must start from the middle square.
+
+Game Round.
+During their turn, a player may choose to:
+
+- Form a Word: Place one or more letters to form a word. Letters must be placed in a straight horizontal or vertical line and must connect to words already on the board.
+- Add Letters: Add one or more letters to your display by clicking the Help button
+- Pass the Turn: Pass the turn without making any moves. 
+
+Rules for Forming Words.
+- Words must be valid according to the game dictionary.
+- If the player changes his idea, he can delete the letter from the board, using the delete button.
+
+Calculation of Points.
+Each letter has a point value. The words formed are evaluated and the total points are added to the player's score, according to the following rules: 
+- word length 
+- letters used
+
+Special Spells
+Certain squares on the board can multiply the value of letters, depending on which house they belong to, the player placing a letter on the color square:
+- Red (Gryffindor): doubles the value of the letter, if the player is of that house.
+- Green (Slytherin): doubles the value of the letter, if the player is of that house.
+- Blue (Ravenclaw): doubles the value of the letter, if the player is of that lineage.
+- Yellow (Hupplepuff): doubles the value of the letter, if the player is of that lineage.
+- Purple (Hogwarts Box): doubles the letter value of any player, regardless of lineage. 
+
+Harry Potter Bonus.
+Forming words related to the world of Harry Potter (character names, spells, places) can award bonus points; words will be checked from the Harry Potter dictionary.
+
+Bonus Balls
+During the game, when a player creates and validates a word that corresponds to a spell (e.g. NOX, LUMOS, FINITE, etc.), bonus balls appear on the board. The balls contain the crests of the four houses of Hogwarts: Gryffindor, Slytherin, Hufflepuff and Ravenclaw.
+
+Bonus Ball Rules
+Ball Generation: For each validated spell word, balls are randomly generated for each house:
+
+Purpose of the balls: The current player (the one whose timer is active) must click on the balls to gain extra points or lose them. 
+
+Bonus Points:
+If the current player clicks on a ball with the coat of arms of his own house, he will earn 2 to 10 points.
+If the current player clicks on a ball with the coat of arms of a house other than his own, he will lose 2 to 4 points.
+Removal of balls: When a ball is clicked, some of the other balls will randomly disappear. This implies that the player may have to click on several balls to remove them all and complete the bonus action, making the game more difficult.  
+End of Game
+The game ends at the last round and the winner with the most points is announced 
+
+
